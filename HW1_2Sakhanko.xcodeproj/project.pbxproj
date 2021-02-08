@@ -8,18 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		4B4EC40B25D16159009F38AF /* HW1_2SakhankoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC40A25D16159009F38AF /* HW1_2SakhankoApp.swift */; };
-		4B4EC40D25D16159009F38AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC40C25D16159009F38AF /* ContentView.swift */; };
 		4B4EC40F25D1615A009F38AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4EC40E25D1615A009F38AF /* Assets.xcassets */; };
 		4B4EC41225D1615A009F38AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4EC41125D1615A009F38AF /* Preview Assets.xcassets */; };
+		4B4EC42625D16282009F38AF /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC41F25D16282009F38AF /* CustomNavigationView.swift */; };
+		4B4EC42725D16282009F38AF /* GifRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42025D16282009F38AF /* GifRowView.swift */; };
+		4B4EC42825D16282009F38AF /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42125D16282009F38AF /* GifView.swift */; };
+		4B4EC42925D16282009F38AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42225D16282009F38AF /* ContentView.swift */; };
+		4B4EC42A25D16282009F38AF /* GifsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42325D16282009F38AF /* GifsFeedView.swift */; };
+		4B4EC42B25D16282009F38AF /* GifThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42425D16282009F38AF /* GifThirdView.swift */; };
+		4B4EC42C25D16282009F38AF /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42525D16282009F38AF /* SpinnerView.swift */; };
+		4B4EC43025D162A4009F38AF /* GifsFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC42F25D162A4009F38AF /* GifsFeedModel.swift */; };
+		4B4EC43525D162DB009F38AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC43425D162DB009F38AF /* NetworkManager.swift */; };
+		4B4EC43925D162F3009F38AF /* Image+navIconModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC43825D162F3009F38AF /* Image+navIconModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B4EC40725D16159009F38AF /* HW1_2Sakhanko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW1_2Sakhanko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4EC40A25D16159009F38AF /* HW1_2SakhankoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1_2SakhankoApp.swift; sourceTree = "<group>"; };
-		4B4EC40C25D16159009F38AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B4EC40E25D1615A009F38AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B4EC41125D1615A009F38AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B4EC41325D1615A009F38AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4EC41F25D16282009F38AF /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		4B4EC42025D16282009F38AF /* GifRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifRowView.swift; sourceTree = "<group>"; };
+		4B4EC42125D16282009F38AF /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		4B4EC42225D16282009F38AF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B4EC42325D16282009F38AF /* GifsFeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifsFeedView.swift; sourceTree = "<group>"; };
+		4B4EC42425D16282009F38AF /* GifThirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifThirdView.swift; sourceTree = "<group>"; };
+		4B4EC42525D16282009F38AF /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		4B4EC42F25D162A4009F38AF /* GifsFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifsFeedModel.swift; sourceTree = "<group>"; };
+		4B4EC43425D162DB009F38AF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4B4EC43825D162F3009F38AF /* Image+navIconModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+navIconModifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +70,11 @@
 		4B4EC40925D16159009F38AF /* HW1_2Sakhanko */ = {
 			isa = PBXGroup;
 			children = (
-				4B4EC40A25D16159009F38AF /* HW1_2SakhankoApp.swift */,
-				4B4EC40C25D16159009F38AF /* ContentView.swift */,
-				4B4EC40E25D1615A009F38AF /* Assets.xcassets */,
-				4B4EC41325D1615A009F38AF /* Info.plist */,
+				4B4EC43725D162E5009F38AF /* Styles */,
+				4B4EC43225D162AD009F38AF /* Managers */,
+				4B4EC42E25D1628E009F38AF /* Model */,
+				4B4EC41E25D16269009F38AF /* View */,
+				4B4EC41A25D16196009F38AF /* Sources */,
 				4B4EC41025D1615A009F38AF /* Preview Content */,
 			);
 			path = HW1_2Sakhanko;
@@ -67,6 +86,62 @@
 				4B4EC41125D1615A009F38AF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B4EC41A25D16196009F38AF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EC40A25D16159009F38AF /* HW1_2SakhankoApp.swift */,
+				4B4EC40E25D1615A009F38AF /* Assets.xcassets */,
+				4B4EC41325D1615A009F38AF /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B4EC41E25D16269009F38AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EC42225D16282009F38AF /* ContentView.swift */,
+				4B4EC41F25D16282009F38AF /* CustomNavigationView.swift */,
+				4B4EC42025D16282009F38AF /* GifRowView.swift */,
+				4B4EC42325D16282009F38AF /* GifsFeedView.swift */,
+				4B4EC42425D16282009F38AF /* GifThirdView.swift */,
+				4B4EC42125D16282009F38AF /* GifView.swift */,
+				4B4EC42525D16282009F38AF /* SpinnerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B4EC42E25D1628E009F38AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EC42F25D162A4009F38AF /* GifsFeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B4EC43225D162AD009F38AF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EC43325D162C5009F38AF /* Network */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4B4EC43325D162C5009F38AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EC43425D162DB009F38AF /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4B4EC43725D162E5009F38AF /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4B4EC43825D162F3009F38AF /* Image+navIconModifier.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +213,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4EC40D25D16159009F38AF /* ContentView.swift in Sources */,
+				4B4EC42825D16282009F38AF /* GifView.swift in Sources */,
+				4B4EC43925D162F3009F38AF /* Image+navIconModifier.swift in Sources */,
+				4B4EC42C25D16282009F38AF /* SpinnerView.swift in Sources */,
+				4B4EC43025D162A4009F38AF /* GifsFeedModel.swift in Sources */,
+				4B4EC42B25D16282009F38AF /* GifThirdView.swift in Sources */,
+				4B4EC43525D162DB009F38AF /* NetworkManager.swift in Sources */,
+				4B4EC42725D16282009F38AF /* GifRowView.swift in Sources */,
+				4B4EC42925D16282009F38AF /* ContentView.swift in Sources */,
+				4B4EC42625D16282009F38AF /* CustomNavigationView.swift in Sources */,
+				4B4EC42A25D16282009F38AF /* GifsFeedView.swift in Sources */,
 				4B4EC40B25D16159009F38AF /* HW1_2SakhankoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +355,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HW1_2Sakhanko/Preview Content\"";
 				DEVELOPMENT_TEAM = 5NGK57BNWL;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HW1_2Sakhanko/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HW1_2Sakhanko/Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +377,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HW1_2Sakhanko/Preview Content\"";
 				DEVELOPMENT_TEAM = 5NGK57BNWL;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HW1_2Sakhanko/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HW1_2Sakhanko/Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
