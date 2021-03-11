@@ -25,22 +25,25 @@ class GifsFeed: ObservableObject, RandomAccessCollection {
     var loadStatus = LoadStatus.ready(nextPage: 1)
     
     subscript(position: Int) -> GifData {
-        gifsFeedItems[position]
+        return gifsFeedItems[position]
     }
 
     init() {
-        loadGifs(0)
+        loadGifs(.gifs)
     }
         
-    func loadGifs(_ tag: Int? = 0, currentItem: GifData? = nil, toggleTag: Bool? = false) {
-
+    func loadGifs(_ apiType: NetworkManager.ApiType, currentItem: GifData? = nil) {
         if !shouldLoadMoreData(currentItem: currentItem) { return }
         guard case let .ready(page) = loadStatus else { return }
+        print("🔴" + "\(page)")
         loadStatus = .loading(page: page)
         if !shouldLoadMoreData(currentItem: currentItem) { return }
-
-        let urlString = NetworkManager().makeRequestFromURL(with: tag == 0 ? .gifs : .stickers, with: .trending) + "&limit=\(toggleTag ?? false ? 5 : page)"
-        let url = URL(string: urlString)!
+        
+        
+        
+        
+        let urlString = NetworkManager().makeRequestFromURL(with: apiType, with: .trending) + "&limit=\(page)"
+        guard let url = URL(string: urlString) else { return }
         let task = URLSession.shared.dataTask(with: url, completionHandler: parseGifsFromResponse(data:response:error:))
         task.resume()
     }
@@ -50,7 +53,7 @@ class GifsFeed: ObservableObject, RandomAccessCollection {
             return true
         }
         
-        for n in (gifsFeedItems.count - 4)...(gifsFeedItems.count-1) {
+        for n in (gifsFeedItems.count - 2)...(gifsFeedItems.count - 1) {
             if n >= 0 && currentItem.id == gifsFeedItems[n].id {
                 return true
             }
@@ -78,7 +81,7 @@ class GifsFeed: ObservableObject, RandomAccessCollection {
                 guard case let .loading(page) = self.loadStatus else {
                     fatalError("loadSatus is in a bad state")
                 }
-                self.loadStatus = .ready(nextPage: page + 5)
+                self.loadStatus = .ready(nextPage: page + 1)
             }
         }
     }

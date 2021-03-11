@@ -13,8 +13,6 @@ struct GifRowView: View {
 
     var body: some View {
         ZStack {
-            Color.init(gif.url.contains(NetworkManager.ApiType.gifs.rawValue) ? .green : .red)
-
             VStack(alignment: .leading) {
                 Text("\(gif.title)")
                     .font(.headline)
