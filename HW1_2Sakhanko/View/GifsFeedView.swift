@@ -26,11 +26,13 @@ struct GifsFeedView: View {
         NavigationView {
             VStack {
                 List(gifsFeed) { (gif: GifData) in
-                    GifRowView(gif: gif)
-                        .frame(height: 120)
-                        .onAppear {
-                            gifsFeed.loadGifs(currentItem: gif)
-                        }
+                    NavigationLink(destination: GifDetailView(gif: gif)) {
+                        GifRowView(gif: gif)
+                            .frame(height: 120)
+                            .onAppear {
+                                gifsFeed.loadGifs(currentItem: gif)
+                            }
+                    }
                 }
                 Picker(selection: $selectedSegment, label: Text("")) {
                     Text((gifs)).tag(0)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B2986F225FABFDA00B67FCA /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2986EE25FABFDA00B67FCA /* AppSettings.swift */; };
+		4B2986FC25FAC98F00B67FCA /* GifDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2986FB25FAC98F00B67FCA /* GifDetailView.swift */; };
+		4B29870025FACAFA00B67FCA /* GifSuperDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2986FF25FACAFA00B67FCA /* GifSuperDetailView.swift */; };
 		4B4EC40B25D16159009F38AF /* HW1_2SakhankoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC40A25D16159009F38AF /* HW1_2SakhankoApp.swift */; };
 		4B4EC40F25D1615A009F38AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4EC40E25D1615A009F38AF /* Assets.xcassets */; };
 		4B4EC41225D1615A009F38AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4EC41125D1615A009F38AF /* Preview Assets.xcassets */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		4B2986EE25FABFDA00B67FCA /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		4B2986FB25FAC98F00B67FCA /* GifDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifDetailView.swift; sourceTree = "<group>"; };
+		4B2986FF25FACAFA00B67FCA /* GifSuperDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifSuperDetailView.swift; sourceTree = "<group>"; };
 		4B4EC40725D16159009F38AF /* HW1_2Sakhanko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW1_2Sakhanko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4EC40A25D16159009F38AF /* HW1_2SakhankoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1_2SakhankoApp.swift; sourceTree = "<group>"; };
 		4B4EC40E25D1615A009F38AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				4B4EC42325D16282009F38AF /* GifsFeedView.swift */,
 				4B4EC42025D16282009F38AF /* GifRowView.swift */,
+				4B2986FB25FAC98F00B67FCA /* GifDetailView.swift */,
+				4B2986FF25FACAFA00B67FCA /* GifSuperDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B4EC43925D162F3009F38AF /* Image+navIconModifier.swift in Sources */,
+				4B29870025FACAFA00B67FCA /* GifSuperDetailView.swift in Sources */,
 				4B4EC43025D162A4009F38AF /* GifsFeedModel.swift in Sources */,
+				4B2986FC25FAC98F00B67FCA /* GifDetailView.swift in Sources */,
 				4B4EC43525D162DB009F38AF /* NetworkManager.swift in Sources */,
 				4B4EC42725D16282009F38AF /* GifRowView.swift in Sources */,
 				4B4EC42A25D16282009F38AF /* GifsFeedView.swift in Sources */,

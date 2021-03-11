@@ -13,7 +13,7 @@ struct GifRowView: View {
 
     var body: some View {
         ZStack {
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 Text("\(gif.title)")
                     .font(.headline)
                 Text("\(gif.url)")
