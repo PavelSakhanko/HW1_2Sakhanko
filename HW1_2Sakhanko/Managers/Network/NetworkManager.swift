@@ -14,9 +14,7 @@ enum APIError: Error {
 }
 
 class NetworkManager {
-
     enum ApiType: String {
-
         case gifs = "gifs"
         case stickers = "stickers"
         
@@ -24,15 +22,13 @@ class NetworkManager {
             rawValue.prefix(1).uppercased() + rawValue.dropFirst(1)
         }
     }
-    
-    enum EndpointType: String {
 
+    enum EndpointType: String {
         case trending = "trending"
         case random = "random"
     }
 
     func makeRequestFromURL(with product: ApiType, with path: EndpointType) -> String {
-        
         let trendingQueryParams: [String: String] = [
             "api_key": "9DBorJdXekyY2e110C5XsJ7XbSSOwysf",
             "rating": "g"
@@ -48,9 +44,7 @@ class NetworkManager {
     }
 }
 
-
 extension URLComponents {
-    
     mutating func setQueryItems(with parameters: [String: String]) {
         self.queryItems = parameters.map { URLQueryItem(name: $0.key, value: $0.value) }
     }

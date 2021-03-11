@@ -12,6 +12,9 @@ struct HW1_2SakhankoApp: App {
     var body: some Scene {
         WindowGroup {
             GifsFeedView()
+                .onAppear() {
+                    AppSettingsService.apiType = "Gifs"
+                }
         }
     }
 }

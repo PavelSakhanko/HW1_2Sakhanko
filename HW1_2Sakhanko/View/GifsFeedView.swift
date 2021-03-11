@@ -19,28 +19,32 @@ struct GifsFeedView: View {
     }
     
     var body: some View {
+        
+        let gifs = NetworkManager.ApiType.gifs.description
+        let stickers = NetworkManager.ApiType.stickers.description
+        
         NavigationView {
             VStack {
                 List(gifsFeed) { (gif: GifData) in
                     GifRowView(gif: gif)
                         .frame(height: 120)
                         .onAppear {
-                            gifsFeed.loadGifs(.gifs, currentItem: gif)
+                            gifsFeed.loadGifs(currentItem: gif)
                         }
                 }
                 Picker(selection: $selectedSegment, label: Text("")) {
-                    Text((NetworkManager.ApiType.gifs.description)).tag(0)
-                    Text((NetworkManager.ApiType.stickers.description)).tag(1)
+                    Text((gifs)).tag(0)
+                    Text((stickers)).tag(1)
                 }
                 .onChange(of: selectedSegment) {
-                    gifsFeed.loadGifs($0 == 0 ? .gifs : .stickers)
+                    AppSettingsService.apiType = $0 == 0 ? gifs : stickers
+                    gifsFeed.loadGifs()
                 }
                 .frame(width: UIScreen.main.bounds.size.width / 2, height: 80, alignment: .center)
                 .pickerStyle(SegmentedPickerStyle())
-                .scaledToFit()
                 .scaleEffect(CGSize(width: 1.5, height: 1.5))
             }
-            .navigationBarTitle(Text("\(selectedSegment == 0 ? "Gifs" : "Stickers")"))
+            .navigationBarTitle(Text("\(selectedSegment == 0 ? gifs : stickers)"))
         }
     }
 }

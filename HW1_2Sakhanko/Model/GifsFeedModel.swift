@@ -29,19 +29,15 @@ class GifsFeed: ObservableObject, RandomAccessCollection {
     }
 
     init() {
-        loadGifs(.gifs)
+        loadGifs()
     }
         
-    func loadGifs(_ apiType: NetworkManager.ApiType, currentItem: GifData? = nil) {
+    func loadGifs(currentItem: GifData? = nil) {
         if !shouldLoadMoreData(currentItem: currentItem) { return }
         guard case let .ready(page) = loadStatus else { return }
-        print("🔴" + "\(page)")
         loadStatus = .loading(page: page)
         if !shouldLoadMoreData(currentItem: currentItem) { return }
-        
-        
-        
-        
+        let apiType: NetworkManager.ApiType = AppSettingsService.apiType.contains("Gifs") ? .gifs : .stickers
         let urlString = NetworkManager().makeRequestFromURL(with: apiType, with: .trending) + "&limit=\(page)"
         guard let url = URL(string: urlString) else { return }
         let task = URLSession.shared.dataTask(with: url, completionHandler: parseGifsFromResponse(data:response:error:))
@@ -72,10 +68,10 @@ class GifsFeed: ObservableObject, RandomAccessCollection {
         }
     
         let newGifs = parseGifsFromData(data: data)
-
         DispatchQueue.main.async {
+            self.gifsFeedItems = []
             self.gifsFeedItems.append(contentsOf: newGifs)
-            if self.gifsFeedItems.count == 0 {
+            if self.gifsFeedItems.isEmpty {
                 self.loadStatus = .done
             } else {
                 guard case let .loading(page) = self.loadStatus else {

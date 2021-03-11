@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Image {
-    
     func navIconModifier() -> some View {
         self
             .frame(width: 30)
